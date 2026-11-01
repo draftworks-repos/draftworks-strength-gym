@@ -73,8 +73,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             priority={true}
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#171A18] via-[#171A18]/65 to-[#171A18]/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#171A18]/90 via-[#171A18]/45 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#171A18]/90 via-[#171A18]/55 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto w-full px-5 sm:px-8 pt-28 pb-16 sm:pb-24 lg:pb-28">
@@ -86,7 +85,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               Serious Strength. Coached in Small Groups.
             </h1>
             <p className="text-base sm:text-lg text-[#F5F4EF]/85 max-w-xl leading-relaxed">
-              Calibrated barbells, 28-meter conditioning turf, and structured 8-week training blocks capped at eight members per coach.
+              Calibrated barbells, 28 meter conditioning turf, and structured 8-week training blocks capped at eight members per coach.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -416,7 +415,9 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div
                 key={item.id}
                 className={`break-inside-avoid relative rounded-2xl overflow-hidden bg-[#171A18] group border border-[#E3E5DF] ${
-                  MASONRY_ASPECTS[idx % MASONRY_ASPECTS.length]
+                  idx === GALLERY_ITEMS.length - 1
+                    ? 'aspect-[4/3] lg:aspect-[3/4]'
+                    : MASONRY_ASPECTS[idx % MASONRY_ASPECTS.length]
                 }`}
               >
                 <ResilientImage

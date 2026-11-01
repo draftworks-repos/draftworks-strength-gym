@@ -19,7 +19,7 @@ export const BranchesPage: React.FC<BranchesPageProps> = ({ onOpenEnquiry }) => 
             priority={true}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#171A18] via-[#171A18]/70 to-[#171A18]/35" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#171A18] via-[#171A18]/40 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto w-full px-5 sm:px-8 pt-28 pb-16 sm:pb-24">
