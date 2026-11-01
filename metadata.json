@@ -1,0 +1,6 @@
+{
+  "name": "DraftWorks — Strength & Conditioning Gym",
+  "description": "Modern strength, conditioning, and personal coaching facilities across Bengaluru, Mumbai, Pune, and Hyderabad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
